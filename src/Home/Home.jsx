@@ -5,9 +5,9 @@ import MenuBar from "../menuBar/menuBar";
 function template() {
   return (
     <div className="home">
-    	<MenuBar></MenuBar>
+    	<MenuBar signOut={this.signOut}></MenuBar>
       <h1>Home</h1>
-      <a href="" onClick={this.signOut}>Sign Out</a>
+      
     </div>
   );
 };

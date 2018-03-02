@@ -13,11 +13,19 @@ function template() {
 		  <li><a href="#">Ligas</a></li>
 		  <li><a href="#">Apuestas</a></li>
 		</ul>
-
-		<div className="f1 bal"></div>
-		<div className="circular f1">
+		
+		<div className="circular f1 dropdown-trigger" data-target='dropdown1'>
 			<img src="http://lorempixel.com/output/abstract-q-c-200-200-7.jpg" alt="" className="circle right"/>
 		</div>
+
+		  <ul id='dropdown1' class='dropdown-content'>
+		    <li><a href="#!">one</a></li>
+		    
+		    <li class="divider" tabindex="-1"></li>
+		    
+		    
+		    <li><a href="#!" onClick={this.props.signOut}><i class="material-icons">highlight_off</i>Sign Out</a></li>
+		  </ul>
 		
     </div>
   );
